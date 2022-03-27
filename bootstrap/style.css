@@ -1,0 +1,14 @@
+
+.orange {
+    background-color: orange;
+    height: 500px;
+}
+
+.pink {
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.bg-violet {
+    background-color: blueviolet;
+}

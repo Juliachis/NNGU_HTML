@@ -1,0 +1,35 @@
+@media (max-width: 991px) {
+    .pink {
+        width: calc(50% - 20px) !important;
+        background-color: aquamarine !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .pink {
+        width: calc(100% - 20px) !important;
+        background-color: gold !important;
+    }
+
+    .block1 {
+        display: none;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.orange {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+}
+
+.pink {
+    background-color: pink;
+    width: calc(25% - 20px);
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+}

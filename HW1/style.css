@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* шапка */
+header {
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.container.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts {
+    font-weight: 600;
+    color: #212121;
+}
+
+/* раздел лучшие букеты */
+.best-section-header {
+    margin: 63px auto;
+    color: #424242;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    text-align: center;
+}
+
+.best-section-items {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.best-section-item {
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-section-item-header {
+    color: #212121;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 23px 0 10px 0;
+}
+
+.best-section-item-text {
+    color: #424242;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0;
+}
+
+/* раздел цитата */
+.cite-section {
+border-top: 1px solid #FFB5B5;
+border-bottom: 1px solid #FFB5B5;
+}
+
+.cite-section-text {
+    margin: 100px auto 0 auto;
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 48px;
+    color: #FF445A;
+    text-align: center;
+}
+
+.cite-section-author {
+    margin: 0 auto 100px auto;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 36px;
+    color: #FF445A;
+    text-align: center;
+}
+
+/* раздел стихи */
+.poem-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.poem-section-text {
+    margin: 88px 0;
+    font-weight: 400;
+    line-height: 27px;
+    color: #424242;
+}
+
+.poem-section-img {
+    margin: 80px 0;
+}
+
+/* подвал */
+footer {
+    height: 80px;
+background-color: #FFB5B5;
+}
+
+.footer-text {
+    font-weight: 400;
+    line-height: 27px;
+    color: #fff;
+    text-align: center;
+    padding: 27px 0 26px 0;
+
+}
