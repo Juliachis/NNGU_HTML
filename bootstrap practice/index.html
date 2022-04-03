@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>ФПК ННГУ</title>
+  </head>
+  <body>
+    <!-- панель навигации -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="pic/logo_UNN_white.svg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Программы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Поиск"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-secondary" type="submit">
+              Поиск
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- карусель -->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="pic/1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="pic/2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="pic/3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
+
+    <!-- программы обучения -->
+
+    <div class="container">
+      <h1 class="my-5 text-center">Программы ФПК ННГУ</h1>
+      <div class="row text-center">
+        <div class="col-lg col-md-6 program-item mb-3">
+          <img src="pic/economics.png" alt="" />
+          <a href=""><p>Бизнес-образование</p></a>
+        </div>
+        <div class="col-lg col-md-6 program-item mb-3">
+          <img src="pic/prikladnaya.png" alt="" />
+          <a href=""><p>Информационные технологии</p></a>
+        </div>
+        <div class="col-lg col-md-6 program-item mb-3">
+          <img src="pic/gmu.png" alt="" />
+          <a href=""><p>Корпоративное обучение</p></a>
+        </div>
+        <div class="col-lg col-md-6 program-item mb-3">
+          <img src="pic/psihology.png" alt="" />
+          <a href=""><p>Психология</p></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- форма обратной связи -->
+
+    <form class="bg-dark py-5">
+      <div class="container">
+        <h2 class="text-light text-center mb-5">Обратная связь</h2>
+        <div class="row gy-2 gx-3 align-items-center justify-content-center">
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInput">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="autoSizingInput"
+              placeholder="Ваше ФИО"
+            />
+          </div>
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInput">Name</label>
+            <input
+              type="email"
+              class="form-control"
+              id="autoSizingInput"
+              placeholder="Введите email"
+            />
+          </div>
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInput">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="autoSizingInput"
+              placeholder="Ваш Вопрос"
+            />
+          </div>
+
+          <div class="col-auto">
+            <button type="submit" class="btn btn-outline-secondary">
+              Отправить
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- блок партнеры -->
+    <div class="container text-center mt-5">
+      <h2 class="mb-5">Партнеры</h2>
+      <div class="row justify-content-around">
+          <div class="col-lg col-md-6 mb-5">
+              <img src="pic/partners/1c-povolzhie.jpg" alt="">
+          </div>
+          <div class="col-lg col-md-6 mb-5">
+              <img src="pic/partners/r-top.png" alt="">
+          </div>
+          <div class="col-lg col-md-6 mb-5">
+              <img src="pic/partners/rka.jpg" alt="">
+          </div>
+          <div class="col-lg col-md-6 mb-5">
+              <img src="pic/partners/rosreestr.jpg" alt="">
+          </div>
+          <div class="col-lg col-md-6 mb-5">
+              <img src="pic/partners/vtb24.jpg" alt="">
+          </div>
+          <div class="col-lg col-md-6 mb-5">
+              <img src="pic/partners/1c-povolzhie.jpg" alt="">
+          </div>
+      </div>
+    </div>
+
+<!-- подвал -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="pic/logo_UNN_white.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Программы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Новости</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Поиск"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                Поиск
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- Дополнительный JavaScript; выберите один из двух! -->
+
+    <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Вариант 2: Bootstrap JS отдельно от Popper
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
